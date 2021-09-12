@@ -55,7 +55,6 @@ The notebook has been uploaded and ran and here are the screenshots below.
 **The Pipeline endpoint with in active status**
 ![Active pipeline endpoint](./scrnshts/PipelineEP.JPG)
 ![Active Pipelinerun](./scrnshts/Pipeline3.JPG)
-![Benchmark scrnsht](./scrnshts/Pipeline3.JPG)
 
 
 

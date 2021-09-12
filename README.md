@@ -34,7 +34,7 @@ The best modcel came out as an Voting ensemble model.
 ![The AutoML Model](./scrnshts/Model.JPG)
 <br>
 **Step 3** *Deploying the best model*<br>
-The Voting Ensemble model is deployed from Azure Studio. Application Insights enabled.
+We choose the best model for deployment and enable "Authentication" while deploying the model using Azure Container Instance (ACI). The executed code in logs.py enables Application Insights. "Application Insights enabled" was disabled before executing logs.py.
 ![Logs enabled](./scrnshts/insights_enabled.JPG)
 <br>
 **Step 4** *Swagger Documentation*<br>
@@ -52,12 +52,15 @@ We can check how fast our deployed service is using Azure Benchmark. The respons
 **Step 7** *Creating publishing and conduming the Pipeline* <br>
 The notebook has been uploaded and ran and here are the screenshots below.
 ![Benchmark scrnsht](./scrnshts/pipeline.JPG)
-![Benchmark scrnsht](./scrnshts/PipelineEP.JPG)
+**The Pipeline endpoint with in active status**
+![Active pipeline endpoint](./scrnshts/PipelineEP.JPG)
+![Active Pipelinerun](./scrnshts/Pipeline3.JPG)
 ![Benchmark scrnsht](./scrnshts/Pipeline3.JPG)
 
 
+
 ## Screen Recording
-[Youtoube Screencast](https://youtu.be/FA-E4cRuQWY)
+[Youtoube Screencast](https://youtu.be/z5YAJNxYWqc)
 
 ## Standout Suggestions
 The suggestion would be we are only putting an AutoML step in the whole Pipeline. THe AutoML step uses a compute target which is created beforehand. Now if we trigger the pipeline it will succeed only if the Compute instance is running.<br>
